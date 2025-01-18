@@ -3,24 +3,7 @@ import { PropertyProps } from "@/interfaces";
 
 export const PLACEHOLDER_IMAGES = {
     VILLA: '/assets/placeholder.jpg',
-    CABIN: '/assets/cozymoutain.jpg',
-    LOFT: '/assets/nyloft.jpg',
     MOUNTAIN: '/assets/mountain.jpg',
-    DESERT: '/assets/desert.jpg',
-    BEACHFRONT: '/assets/beachfront.jpg',
-    LAKESIDE: '/assets/lakeside.jpg',
-    TROPICAL: '/assets/tropical.jpg',
-    PENTHOUSE: '/assets/penthouse.jpg',
-    COASTAL: '/assets/costal.jpg',
-    CLIFFSIDE: '/assets/cliffside.jpg',
-    HISTORICAL: '/assets/historical.jpg',
-    DOWNTOWN: '/assets/downtown.jpg',
-    SAFARI: '/assets/safari.jpg',
-    COTTAGE: '/assets/cottage.jpg',
-    RIVERFRONT: '/assets/riverfront.jpg',
-    SKI: '/assets/ski.jpg',
-    ISLAND: '/assets/island.jpg',
-    RETREAT: '/assets/retreat.jpg',
     DEFAULT: '/assets/default-property.jpg'
 };
 
