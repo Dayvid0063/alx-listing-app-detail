@@ -1,121 +1,109 @@
-# ALX Listing App (Responsive Property Listing Page)
+# Property Listing App - Detail Page Implementation
 
-A responsive property listing page built with Next.js and Tailwind CSS. This project implements a modern, user-friendly interface for browsing property listings with features like filtering, responsive design, and a clean layout.
+This project implements a responsive Property Detail Page for a listing application using Next.js, TypeScript, and Tailwind CSS.
 
-## 📝 Overview
+## Project Setup
 
-This project is a property listing page that includes:
-- Responsive header with navigation and user actions
-- Hero section
-- Search functionality
-- Property filters
-- Grid layout for property listings
-- Responsive footer with multiple sections
-- Clean, modern UI using Tailwind CSS
-
----
-
-## 🛠️ Technologies Used
-
-- **Next.js** - React framework for production
-- **TypeScript** - For type safety and better development experience
-- **Tailwind CSS** - For styling and responsive design
-- **next/image** - For optimized image loading
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (version 14.0 or higher)
-- npm package manager
-
-### Installation
-
-1. Clone the repository:
+1. Clone the base repository:
 ```bash
 git clone https://github.com/Dayvid0063/alx-listing-app-00.git
-cd alx-listing-app-00
 ```
 
-2. Install dependencies:
+2. Create a new repository and name it:
 ```bash
+alx-listing-app-detail
+```
+
+3. Move all files to the root of the new repository.
+
+## Project Structure
+
+```
+alx-listing-app-detail/
+├── components/
+│   └── property/
+│       ├── PropertyDetail.tsx
+│       ├── BookingSection.tsx
+│       └── ReviewSection.tsx
+├── pages/
+│   └── property/
+│       └── [id].tsx
+├── interfaces/
+│   └── index.ts
+├── constants/
+│   └── index.ts
+└── README.md
+```
+
+## Components Overview
+
+### PropertyDetail.tsx
+- Displays property name, rating, and location
+- Shows image grid of the property
+- Implements tabbed interface for:
+  - What we offer
+  - About host
+  - Reviews
+
+### BookingSection.tsx
+- Shows nightly price
+- Provides date selection for check-in/check-out
+- Calculates total cost
+- Includes reservation button
+
+### ReviewSection.tsx
+- Displays user reviews with:
+  - Profile pictures
+  - Ratings
+  - Comments
+
+## Features
+
+- Responsive design using Tailwind CSS
+- Dynamic routing with Next.js
+- Custom tab implementation
+- Date-based price calculation
+- Image grid layout
+- Review system
+- Booking functionality
+
+## Implementation Steps
+
+1. Create necessary directories and files
+2. Implement interfaces and constants
+3. Create dynamic property page
+4. Build individual components
+5. Style with Tailwind CSS
+6. Test responsiveness and functionality
+
+## Running the Project
+
+```bash
+# Install dependencies
 npm install
-```
 
-3. Run the development server:
-```bash
+# Run development server
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+Access the application at `http://localhost:3000/property/[property-name]`
 
----
+## Key Files
 
-## 📁 Project Structure
+### pages/property/[id].tsx
+Dynamic route for individual property pages
 
-```
-alx-listing-app-00/
-├── components/
-│   ├── common/
-│   │   ├── Button.tsx
-│   │   └── Card.tsx
-│   └── layout/
-│       ├── Header.tsx
-│       ├── Footer.tsx
-│       └── Layout.tsx
-├── constants/
-│   └── index.ts
-├── interfaces/
-│   └── index.ts
-├── pages/
-│   ├── _app.tsx
-│   └── index.tsx
-├── public/
-│   └── assets/
-├── styles/
-│   └── globals.css
-└── next.config.js
-```
+### components/property/PropertyDetail.tsx
+Main component for displaying property information
 
----
+### components/property/BookingSection.tsx
+Handles booking functionality and price calculations
 
-## 🎯 Features
+### components/property/ReviewSection.tsx
+Displays property reviews and ratings
 
-### Property Listings
-- Responsive grid layout
-- Property cards with:
-  - Image with fallback handling
-  - Property title and location
-  - Price information
-  - Rating display
-  - Category tags
+### interfaces/index.ts
+TypeScript interfaces for components
 
-### Filter System
-- Horizontal scrollable filter pills
-- Category-based filtering
-- Mobile-responsive design
-
-### Header Component
-
-- Responsive navigation
-- User authentication buttons
-- Accommodation type filters
-- Sticky positioning for better UX
-
-### Footer Component
-- Multi-column layout
-- Organized link sections
-- Responsive design
-- Copyright information
-
----
-
-## 🎨 Styling
-
-The project uses Tailwind CSS for styling with:
-- Responsive breakpoints
-- Custom color scheme
-- Flexible grid system
-- Hover and transition effects
+### constants/index.ts
+Sample data and placeholder images
